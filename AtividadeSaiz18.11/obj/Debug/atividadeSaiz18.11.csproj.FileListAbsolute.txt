@@ -1,0 +1,8 @@
+C:\Users\aluno\Documents\SharpDevelop Projects\atividadeSaiz18.11\atividadeSaiz18.11\bin\Debug\atividadeSaiz18.11.exe.config
+C:\Users\aluno\Documents\SharpDevelop Projects\atividadeSaiz18.11\atividadeSaiz18.11\bin\Debug\atividadeSaiz18.11.exe
+C:\Users\aluno\Documents\SharpDevelop Projects\atividadeSaiz18.11\atividadeSaiz18.11\bin\Debug\atividadeSaiz18.11.pdb
+C:\Users\aluno\Documents\SharpDevelop Projects\atividadeSaiz18.11\atividadeSaiz18.11\obj\Debug\atividadeSaiz18.11.csprojResolveAssemblyReference.cache
+C:\Users\aluno\Documents\SharpDevelop Projects\atividadeSaiz18.11\atividadeSaiz18.11\obj\Debug\atividadeSaiz18._1.MainForm.resources
+C:\Users\aluno\Documents\SharpDevelop Projects\atividadeSaiz18.11\atividadeSaiz18.11\obj\Debug\atividadeSaiz18.11.csproj.GenerateResource.Cache
+C:\Users\aluno\Documents\SharpDevelop Projects\atividadeSaiz18.11\atividadeSaiz18.11\obj\Debug\atividadeSaiz18.11.exe
+C:\Users\aluno\Documents\SharpDevelop Projects\atividadeSaiz18.11\atividadeSaiz18.11\obj\Debug\atividadeSaiz18.11.pdb

@@ -29,5 +29,41 @@ namespace atividadeSaiz18._1
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		void Button1Click(object sender, EventArgs e)
+		{
+	//Botão de salvar
+	richTextBox1.SaveFile("funcionarios.txt", RichTextBoxStreamType.PlainText);
+	MessageBox.Show("Arquivo salvo com sucesso");
+		}
+		void Button6Click(object sender, EventArgs e)
+		{
+			//2 botão de salvar
+			richTextBox2.SaveFile("gastos.txt", RichTextBoxStreamType.PlainText);
+			MessageBox.Show("Arquivo salvo com sucesso");
+		}
+		void Button2Click(object sender, EventArgs e)
+		{
+	//Abrir
+	richTextBox1.LoadFile("funcionarios.txt", RichTextBoxStreamType.PlainText);
+		}
+		void Button3Click(object sender, EventArgs e)
+		{
+	//Limpar 
+	richTextBox1.Clear();
+		}
+		void Button7Click(object sender, EventArgs e)
+		{
+			//Limpar segundo richBox
+	richTextBox2.Clear();
+		}
+		void Button4Click(object sender, EventArgs e)
+		{
+	// adicionar 
+	richTextBox1.Text += textBox1.Text + " | " + textBox2.Text + " | " + textBox3.Text + "\n";
+	textBox1.Clear();
+	textBox2.Clear();
+	textBox3.Clear();
+		}
+		
 	}
 }
