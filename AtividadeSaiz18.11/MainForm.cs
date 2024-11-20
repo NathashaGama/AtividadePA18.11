@@ -111,7 +111,62 @@ namespace atividadeSaiz18._1
 		
 		void Button8Click(object sender, EventArgs e)
 		{
-			
-		}
+			//Obter todas as linhas do RichTextBox
+
+			string[] linhas=richTextBox1.Lines;
+
+			// Obter a média calculada do TextBox (Certifique-se de que ela esteja em formato numërico)
+
+			double media;
+
+			if (!double.TryParse(textBox5.Text.Trim(), out media))
+			{
+			MessageBox.Show("Por favor, calcule a média antes de usar este botão.");
+			return;
 			}
+
+			// Variável para armazenar os dados acima da média
+
+			string dadosAcimalMedia = "";
+
+			// Loop para verificar quais dados estão acima de média 
+			for (int i=0; i < linhas.Length; i++)
+			{
+			// Ignorar linhas vazias
+
+				if (string.IsNullOrwhiteSpace(linhas[i]))
+				continue;
+	
+				// Dividir a linha em partes 
+				string[] partes=linhas[i].Split(',');
+				
+				// Garantir que a linha possui pelo menos 3 partes (Nome, Telefone, Valor) 
+				if (partes.Length >= 3)
+				{
+				
+					try
+					{
+						// Tentar converter o valor da conta para double 
+						double valor=double.Parse(partes [2].Trim());
+				
+						// Verificar se o valor ultrapassa a média
+						if (valor > media)
+						{
+						// Adicionar a linha ao resultado
+						dadosAcimaMedia += linhas[i]+Environment.NewLine;
+						}
+					}
+						catch
+						{
+							MessageBox.Show("Erro ao processar o valor");
+						}
+				 }
 			}
+				richTextBox2.Text= dadosAcimalMedia;
+				if(string.IsNullOrWhiteSpace(dadosAcimalMedia))
+				{
+					MessageBox.Show("Nenhum dado está acima da média");
+				}
+	 }
+	} }
+	
