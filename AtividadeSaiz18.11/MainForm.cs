@@ -29,17 +29,19 @@ namespace atividadeSaiz18._1
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		void Button4Click(object sender, EventArgs e)
+		{
+	// adicionar 
+	richTextBox1.Text += textBox1.Text + " | " + textBox2.Text + " | " + textBox3.Text + "\n";
+	textBox1.Clear();
+	textBox2.Clear();
+	textBox3.Clear();
+		}
 		void Button1Click(object sender, EventArgs e)
 		{
 	//Botão de salvar
 	richTextBox1.SaveFile("funcionarios.txt", RichTextBoxStreamType.PlainText);
 	MessageBox.Show("Arquivo salvo com sucesso");
-		}
-		void Button6Click(object sender, EventArgs e)
-		{
-			//2 botão de salvar
-			richTextBox2.SaveFile("gastos.txt", RichTextBoxStreamType.PlainText);
-			MessageBox.Show("Arquivo salvo com sucesso");
 		}
 		void Button2Click(object sender, EventArgs e)
 		{
@@ -51,56 +53,65 @@ namespace atividadeSaiz18._1
 	//Limpar 
 	richTextBox1.Clear();
 		}
+		void Button6Click(object sender, EventArgs e)
+		{
+			//2 botão de salvar
+			richTextBox2.SaveFile("gastos.txt", RichTextBoxStreamType.PlainText);
+			MessageBox.Show("Arquivo salvo com sucesso");
+		}
+		
 		void Button7Click(object sender, EventArgs e)
 		{
 			//Limpar segundo richBox
 	richTextBox2.Clear();
 		}
-		void Button4Click(object sender, EventArgs e)
-		{
-	// adicionar 
-	richTextBox1.Text += textBox1.Text + " | " + textBox2.Text + " | " + textBox3.Text + "\n";
-	textBox1.Clear();
-	textBox2.Clear();
-	textBox3.Clear();
-		}
-		
 		
 		void Button5Click(object sender, EventArgs e)
 		{
-			//calcular media
-			int[] valores= new int[50];
-			for(int i=0; i<50; i++){
-				string linha= richTextBox1.Lines[i];
-				string[] dados= linha.Split('|');
-				valores[i]= int.Parse(dados[2]);
-			}
-			int soma= valores[0] + valores[1] +valores[2] + valores[3] +valores[4] + valores[5] +valores[6] + valores[7] +valores[8] + valores[9] +valores[10] 
-				+ valores[11] +valores[12] + valores[13] +valores[14] + valores[15] +valores[16] + valores[17] +valores[18] + valores[19] +valores[20]
-				+ valores[21] +valores[22] + valores[23] +valores[24] + valores[25] +valores[26] + valores[27] +valores[28] + valores[29] +valores[30] 
-				+ valores[31] +valores[32] + valores[33] +valores[34] + valores[35] +valores[36] + valores[37] +valores[38] + valores[39] +valores[40] 
-				+ valores[41] +valores[42] + valores[43] +valores[44] + valores[45] +valores[46] + valores[47] +valores[48] + valores[49];
-			textBox4.Text= soma.ToString("C");
-			int media= soma/49;
-			textBox5.Text= media.ToString("C");
+		// soma do total
+			double total= 0;
+			int cont= 0;
+		// pegar linha 
+			string[] linhas = richTextBox1.Lines;
 			
-			int nLinha[]= int.Parse(richTextBox1.Lines.Length);
-
-			if (nLinha<richTextBox1.Lines.Length-1){
-	//pegar a linha especificada 
-				string linha= richTextBox1.Lines[nLinha];
-
-	// separação 
-	string[] dados= linha.Split('|');
-
-	// mostrar
-	textBox1.Text= dados[0];
-	textBox2.Text= dados[1];
-	textBox3.Text= dados[2];
-			}else{
-				MessageBox.Show("Registro não cadastrado");
-			}
+			for (int i= 0; i<linhas.Length; i++){
+		//tirar linhas sem dados
+			if(string.IsNullOrWhiteSpace(linhas[i])) continue;
 	
-			}
+		//pegar dado
+			string[] dado1= linhas[i].Split('|');
+	
+			if (dado1.Length>=3)
+			{
+				try
+				{
+					double valor= double.Parse(dado1[1].Trim());
+					total += valor;
+					cont++; 
+				}
+				catch
+				{
+					// pra o caso de dar errado
+					MessageBox.Show("Erro ao processar o valor na linha {i=1}: {linhas[i]}");
+				}
+			}else
+			{
+				MessageBox.Show("Linha inválida encontrada: {limhas[i]}");
 			}
 }
+			textBox4.Text= total.ToString("C");
+			
+			//calculo da média
+			double media= cont>0 ? total/cont : 0;
+			
+			// exibir
+			textBox5.Text= media.ToString("C");
+			}
+	
+		
+		void Button8Click(object sender, EventArgs e)
+		{
+			
+		}
+			}
+			}

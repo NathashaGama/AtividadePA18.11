@@ -68,12 +68,15 @@ namespace atividadeSaiz18._1
 			this.button7 = new System.Windows.Forms.Button();
 			this.textBox4 = new System.Windows.Forms.TextBox();
 			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.button8 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// richTextBox1
 			// 
 			this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox1.Location = new System.Drawing.Point(176, 36);
+			this.richTextBox1.Location = new System.Drawing.Point(188, 33);
 			this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
 			this.richTextBox1.Name = "richTextBox1";
 			this.richTextBox1.Size = new System.Drawing.Size(199, 317);
@@ -84,7 +87,7 @@ namespace atividadeSaiz18._1
 			// 
 			this.button1.BackColor = System.Drawing.Color.NavajoWhite;
 			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button1.Location = new System.Drawing.Point(176, 354);
+			this.button1.Location = new System.Drawing.Point(188, 354);
 			this.button1.Margin = new System.Windows.Forms.Padding(2);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(63, 35);
@@ -97,7 +100,7 @@ namespace atividadeSaiz18._1
 			// 
 			this.button2.BackColor = System.Drawing.Color.NavajoWhite;
 			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button2.Location = new System.Drawing.Point(243, 354);
+			this.button2.Location = new System.Drawing.Point(255, 354);
 			this.button2.Margin = new System.Windows.Forms.Padding(2);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(63, 35);
@@ -110,7 +113,7 @@ namespace atividadeSaiz18._1
 			// 
 			this.button3.BackColor = System.Drawing.Color.NavajoWhite;
 			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button3.Location = new System.Drawing.Point(311, 354);
+			this.button3.Location = new System.Drawing.Point(324, 354);
 			this.button3.Margin = new System.Windows.Forms.Padding(2);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(63, 35);
@@ -193,7 +196,7 @@ namespace atividadeSaiz18._1
 			// 
 			this.button5.BackColor = System.Drawing.Color.NavajoWhite;
 			this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button5.Location = new System.Drawing.Point(378, 207);
+			this.button5.Location = new System.Drawing.Point(17, 366);
 			this.button5.Margin = new System.Windows.Forms.Padding(2);
 			this.button5.Name = "button5";
 			this.button5.Size = new System.Drawing.Size(104, 35);
@@ -205,7 +208,7 @@ namespace atividadeSaiz18._1
 			// richTextBox2
 			// 
 			this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.richTextBox2.Location = new System.Drawing.Point(492, 36);
+			this.richTextBox2.Location = new System.Drawing.Point(414, 33);
 			this.richTextBox2.Margin = new System.Windows.Forms.Padding(2);
 			this.richTextBox2.Name = "richTextBox2";
 			this.richTextBox2.Size = new System.Drawing.Size(199, 317);
@@ -216,10 +219,10 @@ namespace atividadeSaiz18._1
 			// 
 			this.button6.BackColor = System.Drawing.Color.NavajoWhite;
 			this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button6.Location = new System.Drawing.Point(492, 354);
+			this.button6.Location = new System.Drawing.Point(414, 354);
 			this.button6.Margin = new System.Windows.Forms.Padding(2);
 			this.button6.Name = "button6";
-			this.button6.Size = new System.Drawing.Size(92, 35);
+			this.button6.Size = new System.Drawing.Size(71, 35);
 			this.button6.TabIndex = 15;
 			this.button6.Text = "Salvar";
 			this.button6.UseVisualStyleBackColor = false;
@@ -229,10 +232,10 @@ namespace atividadeSaiz18._1
 			// 
 			this.button7.BackColor = System.Drawing.Color.NavajoWhite;
 			this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button7.Location = new System.Drawing.Point(588, 354);
+			this.button7.Location = new System.Drawing.Point(545, 354);
 			this.button7.Margin = new System.Windows.Forms.Padding(2);
 			this.button7.Name = "button7";
-			this.button7.Size = new System.Drawing.Size(102, 35);
+			this.button7.Size = new System.Drawing.Size(68, 35);
 			this.button7.TabIndex = 16;
 			this.button7.Text = "Limpar";
 			this.button7.UseVisualStyleBackColor = false;
@@ -240,17 +243,50 @@ namespace atividadeSaiz18._1
 			// 
 			// textBox4
 			// 
-			this.textBox4.Location = new System.Drawing.Point(724, 49);
+			this.textBox4.Location = new System.Drawing.Point(17, 288);
 			this.textBox4.Name = "textBox4";
 			this.textBox4.Size = new System.Drawing.Size(100, 20);
 			this.textBox4.TabIndex = 17;
 			// 
 			// textBox5
 			// 
-			this.textBox5.Location = new System.Drawing.Point(734, 95);
+			this.textBox5.Location = new System.Drawing.Point(17, 333);
 			this.textBox5.Name = "textBox5";
 			this.textBox5.Size = new System.Drawing.Size(100, 20);
 			this.textBox5.TabIndex = 18;
+			// 
+			// label4
+			// 
+			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label4.Location = new System.Drawing.Point(17, 267);
+			this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(100, 18);
+			this.label4.TabIndex = 19;
+			this.label4.Text = "Valor Total";
+			// 
+			// label5
+			// 
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label5.Location = new System.Drawing.Point(17, 312);
+			this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(105, 18);
+			this.label5.TabIndex = 20;
+			this.label5.Text = "Valor Médio";
+			// 
+			// button8
+			// 
+			this.button8.BackColor = System.Drawing.Color.NavajoWhite;
+			this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button8.Location = new System.Drawing.Point(478, 354);
+			this.button8.Margin = new System.Windows.Forms.Padding(2);
+			this.button8.Name = "button8";
+			this.button8.Size = new System.Drawing.Size(63, 35);
+			this.button8.TabIndex = 21;
+			this.button8.Text = "Abrir";
+			this.button8.UseVisualStyleBackColor = false;
+			this.button8.Click += new System.EventHandler(this.Button8Click);
 			// 
 			// MainForm
 			// 
@@ -258,6 +294,9 @@ namespace atividadeSaiz18._1
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Cornsilk;
 			this.ClientSize = new System.Drawing.Size(826, 412);
+			this.Controls.Add(this.button8);
+			this.Controls.Add(this.label5);
+			this.Controls.Add(this.label4);
 			this.Controls.Add(this.textBox5);
 			this.Controls.Add(this.textBox4);
 			this.Controls.Add(this.button7);
@@ -281,6 +320,9 @@ namespace atividadeSaiz18._1
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button button8;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.TextBox textBox5;
 		private System.Windows.Forms.TextBox textBox4;
 	}
