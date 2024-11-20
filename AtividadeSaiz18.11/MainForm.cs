@@ -81,9 +81,26 @@ namespace atividadeSaiz18._1
 				+ valores[31] +valores[32] + valores[33] +valores[34] + valores[35] +valores[36] + valores[37] +valores[38] + valores[39] +valores[40] 
 				+ valores[41] +valores[42] + valores[43] +valores[44] + valores[45] +valores[46] + valores[47] +valores[48] + valores[49];
 			textBox4.Text= soma.ToString("C");
+			int media= soma/49;
+			textBox5.Text= media.ToString("C");
 			
+			int nLinha[]= int.Parse(richTextBox1.Lines.Length);
+
+			if (nLinha<richTextBox1.Lines.Length-1){
+	//pegar a linha especificada 
+				string linha= richTextBox1.Lines[nLinha];
+
+	// separação 
+	string[] dados= linha.Split('|');
+
+	// mostrar
+	textBox1.Text= dados[0];
+	textBox2.Text= dados[1];
+	textBox3.Text= dados[2];
+			}else{
+				MessageBox.Show("Registro não cadastrado");
 			}
 	
-
-		}
-	}
+			}
+			}
+}
