@@ -65,5 +65,25 @@ namespace atividadeSaiz18._1
 	textBox3.Clear();
 		}
 		
+		
+		void Button5Click(object sender, EventArgs e)
+		{
+			//calcular media
+			int[] valores= new int[50];
+			for(int i=0; i<50; i++){
+				string linha= richTextBox1.Lines[i];
+				string[] dados= linha.Split('|');
+				valores[i]= int.Parse(dados[2]);
+			}
+			int soma= valores[0] + valores[1] +valores[2] + valores[3] +valores[4] + valores[5] +valores[6] + valores[7] +valores[8] + valores[9] +valores[10] 
+				+ valores[11] +valores[12] + valores[13] +valores[14] + valores[15] +valores[16] + valores[17] +valores[18] + valores[19] +valores[20]
+				+ valores[21] +valores[22] + valores[23] +valores[24] + valores[25] +valores[26] + valores[27] +valores[28] + valores[29] +valores[30] 
+				+ valores[31] +valores[32] + valores[33] +valores[34] + valores[35] +valores[36] + valores[37] +valores[38] + valores[39] +valores[40] 
+				+ valores[41] +valores[42] + valores[43] +valores[44] + valores[45] +valores[46] + valores[47] +valores[48] + valores[49];
+			textBox4.Text= soma.ToString("C");
+			
+			}
+	
+
+		}
 	}
-}
