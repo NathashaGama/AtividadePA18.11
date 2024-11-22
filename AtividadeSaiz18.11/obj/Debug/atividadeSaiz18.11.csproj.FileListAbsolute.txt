@@ -14,3 +14,11 @@ C:\Users\peque\OneDrive\Área de Trabalho\atividadeSaiz18.11\AtividadePA18.11\at
 C:\Users\peque\OneDrive\Área de Trabalho\atividadeSaiz18.11\AtividadePA18.11\atividadeSaiz18.11\bin\Debug\atividadeSaiz18.11.exe.config
 C:\Users\peque\OneDrive\Área de Trabalho\atividadeSaiz18.11\AtividadePA18.11\atividadeSaiz18.11\bin\Debug\atividadeSaiz18.11.exe
 C:\Users\peque\OneDrive\Área de Trabalho\atividadeSaiz18.11\AtividadePA18.11\atividadeSaiz18.11\bin\Debug\atividadeSaiz18.11.pdb
+C:\Users\peque\OneDrive\Área de Trabalho\qualquernome\AtividadePA18.11\atividadeSaiz18.11\obj\Debug\atividadeSaiz18.11.csprojResolveAssemblyReference.cache
+C:\Users\peque\OneDrive\Área de Trabalho\qualquernome\AtividadePA18.11\atividadeSaiz18.11\obj\Debug\atividadeSaiz18._1.MainForm.resources
+C:\Users\peque\OneDrive\Área de Trabalho\qualquernome\AtividadePA18.11\atividadeSaiz18.11\obj\Debug\atividadeSaiz18.11.csproj.GenerateResource.Cache
+C:\Users\peque\OneDrive\Área de Trabalho\qualquernome\AtividadePA18.11\atividadeSaiz18.11\obj\Debug\atividadeSaiz18.11.exe
+C:\Users\peque\OneDrive\Área de Trabalho\qualquernome\AtividadePA18.11\atividadeSaiz18.11\bin\Debug\atividadeSaiz18.11.exe.config
+C:\Users\peque\OneDrive\Área de Trabalho\qualquernome\AtividadePA18.11\atividadeSaiz18.11\bin\Debug\atividadeSaiz18.11.exe
+C:\Users\peque\OneDrive\Área de Trabalho\qualquernome\AtividadePA18.11\atividadeSaiz18.11\bin\Debug\atividadeSaiz18.11.pdb
+C:\Users\peque\OneDrive\Área de Trabalho\qualquernome\AtividadePA18.11\atividadeSaiz18.11\obj\Debug\atividadeSaiz18.11.pdb
